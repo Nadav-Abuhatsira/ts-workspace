@@ -1,0 +1,6 @@
+# Coverage directories
+coverage/
+.nyc_output/
+
+# Dependencies
+node_modules/ 
