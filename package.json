@@ -1,0 +1,36 @@
+{
+  "name": "ts-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon",
+    "test": "mocha",
+    "coverage": "nyc mocha",
+    "lint": "eslint --ext .ts src",
+    "lint:fix": "eslint --ext .ts src --fix",
+    "type:check": "yarn run tsc --noEmit --project ./tsconfig.all-files.json",
+    "sanity": "yarn lint && yarn type:check && yarn coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.13.10",
+    "@types/sinon": "^17.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mocha": "^11.1.0",
+    "nodemon": "^3.1.9",
+    "nyc": "^17.1.0",
+    "prettier": "^2.5.1",
+    "sinon": "^19.0.4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.2"
+  }
+}
